@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+   // when you define an item in a navigation drawer it acts like a button
+    //when we define an item in the group that item will have "hold characterstics"
+    //Hold Characterstics means  when we select it and after a toast message comes and when we open it
+    //we can it is highlighted(IT HAPPENS ONLY IN GROUP). but in menu this does not happen.
+    //
+    <group
+        android:checkableBehavior="single">
+
+        <item
+        android:title="@string/inbox"
+        android:id="@+id/inbox_id"
+        android:icon="@drawable/inbox"/>
+        <item
+            android:title="@string/starred"
+            android:id="@+id/starred_id"
+            android:icon="@drawable/star"/>
+        <item
+            android:title="@string/sent_mail"
+            android:id="@+id/sent_id"
+            android:icon="@drawable/send"/>
+        <item
+            android:title="@string/drafts"
+            android:id="@+id/drafts_id"
+            android:icon="@drawable/envelope"/>
+    </group>
+
+    <item android:title="SubHeading">
+        <menu>
+            <item
+                android:title="@string/all_mail"
+                android:id="@+id/allmail_id"
+                android:icon="@drawable/allmail"/>
+            <item
+                android:title="@string/trash"
+                android:id="@+id/trash_id"
+                android:icon="@drawable/bin"/>
+            <item
+                android:title="@string/spam"
+                android:id="@+id/spam_id"
+                android:icon="@drawable/warning"/>
+        </menu>
+
+
+    </item>
+
+</menu>
